@@ -7,10 +7,10 @@
     <title>practika</title>
   </head>
   <body>
-      <header class="header">
+      <header class="header" id="header">
           <div class="container">
               <div class="header__brand">
-                  <button class="header__menu" type="button" aria-label="Открыть меню">
+                  <button class="header__menu" type="button" aria-label="Открыть меню" id="burger">
                       <img src="/src/assets/svg/burger.svg" alt="">
                   </button>
                   <span class="header__divider" aria-hidden="true"></span>
@@ -38,6 +38,51 @@
             </div>
           </div>
       </header>
+      <aside class="mobile-menu" id="mobile-menu" aria-label="Главное меню" aria-hidden="true">
+        <div class="mobile-menu__header">
+          <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+            <img src="/src/assets/svg/burger.-closesvg.svg" alt="">
+          </button>
+          <a class="mobile-menu__logo" href="/" aria-label="CPS — главная">
+            <img src="/src/assets/svg/Logo.svg" alt="CPS">
+          </a>
+          <button class="mobile-menu__search" type="button" aria-label="Поиск">
+            <img src="/src/assets/svg/search.svg" alt="">
+          </button>
+        </div>
+        <nav class="mobile-menu__nav" aria-label="Разделы сайта">
+          <ul class="mobile-menu__links">
+            <li><a class="is-active" href="#services" aria-current="page">Ремонт техники</a></li>
+            <li><a href="#services">Услуги и сервисы</a></li>
+            <li><a href="#corporate">Корпоративным клиентам</a></li>
+            <li><a href="#retailers">Продавцам техники</a></li>
+            <li><a href="#partners">Партнерам</a></li>
+            <li><a href="#manufacturers">Производителям</a></li>
+            <li><a href="#service-centers">Наши сервисные центры</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__footer" id="contacts">
+          <div class="mobile-menu__contacts">
+            <a class="mobile-menu__contact" href="tel:+78008908900" aria-label="Позвонить">
+              <img src="/src/assets/svg/call.svg" alt="">
+            </a>
+            <a class="mobile-menu__contact" href="mailto:mail@cps.com" aria-label="Написать сообщение">
+              <img src="/src/assets/svg/chat.svg" alt="">
+            </a>
+            <a class="mobile-menu__contact" href="#profile" aria-label="Профиль">
+              <img src="/src/assets/svg/profile.svg" alt="">
+            </a>
+          </div>
+          <a class="mobile-menu__email" href="mailto:mail@cps.com">mail@cps.com</a>
+          <a class="mobile-menu__phone" href="tel:+78008908900">8 800 890 8900</a>
+          <div class="mobile-menu__languages" aria-label="Язык сайта">
+            <button type="button" class="is-active" lang="ru" aria-pressed="true">RU</button>
+            <button type="button" lang="en" aria-pressed="false">EN</button>
+            <button type="button" lang="zh" aria-pressed="false">CH</button>
+          </div>
+        </div>
+      </aside>
       <main>
 
           <section class="hero">
